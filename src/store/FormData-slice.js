@@ -24,7 +24,9 @@ const formDataSlice = createSlice({
     },
     deleteForm(state, action) {
       const index = state.findIndex((element) => element.id === action.payload);
-      if (index !== 1) state.splice(index, 1);
+      if (index !== -1) {
+        state.splice(index, 1);
+      }
     },
   },
 });
