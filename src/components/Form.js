@@ -185,7 +185,7 @@ function Form() {
                 error={addIsInvalid}
                 helperText={
                   addIsInvalid
-                    ? "This field only allows hypen, comma, alphabets"
+                    ? "This field only allows hypen, comma, alphabets, numbers"
                     : " "
                 }
                 value={enteredValues.address}
